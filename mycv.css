@@ -1,11 +1,24 @@
-header {
-    text-align: center;
-}
+    .important { font-weight: bold; }
 
-h1 {
-    text-align: center;
-}
+    .header-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    
+    .contact-info { vertical-align: top; }
+    
+    .photo-box { 
+      text-align: right; 
+      vertical-align: top; 
+    }
 
-span.emph1 {
-    font-weight: bold;
-}
+    .cv-photo {
+      width: 120px;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    ul { list-style-type: none; padding-left: 0; }
+    li { margin-bottom: 10px; }
+    h3 { margin-top: 20px; font-weight: normal; }

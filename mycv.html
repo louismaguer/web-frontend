@@ -1,38 +1,85 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="mycv.css">
-    <meta charset="utf-8">
-    <title>My Résumé</title>
-  </head>
-  <header>
-    My Résumé
-  </header>
-  <h1>
-    Louis
-  </h1>
-<table>
-  <thead><h2>
-    <tr><th>
-    Contact information
-    </th>
-  <th></th></tr>
-  </h2>
-  </thead>
-  <tbody>
-  <tr><td>
-  <ul>
-    <li><span class="emph1">Phone number :</span> + 33</li>
-    <li><span class="emph1">E-mail address :</span> louis@etu.minesparis.psl.eu</li>
-  </ul>
-  </td><td>
-    <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8fDA%3D" alt="photo d'illustration", width="20%", height="5%", align="right" />
-  </td></tr>
-  </tbody>
+<head>
+  <ink rel="stylesheet" href="mycv.css">
+  <meta charset="utf-8">
+  <title>CV Louis</title>
+  <style>
+    .important { font-weight: bold; }
+
+    .header-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    
+    .contact-info { vertical-align: top; }
+    
+    .photo-box { 
+      text-align: right; 
+      vertical-align: top; 
+    }
+
+    .cv-photo {
+      width: 120px;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    ul { list-style-type: none; padding-left: 0; }
+    li { margin-bottom: 10px; }
+    h3 { margin-top: 20px; font-weight: normal; }
+  </style>
+</head>
+<body>
+
+  <h1>Louis</h1>
+
+  <table class="header-table">
+    <tr>
+      <td class="contact-info">
+        <p>
+          <span class="important">Téléphone :</span> +33 1 23 45 67 89<br>
+          <span class="important">Email :</span> <a href="mailto:louis@etu.minesparis.psl.eu">louis@etu.minesparis.psl.eu</a><br>
+          <span class="important">Localisation :</span> Paris, France
+        </p>
+      </td>
+      <td class="photo-box">
+        <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8fDA%3D" alt="Photo de profil" class="cv-photo">
+      </td>
+    </tr>
   </table>
-  <h2>
-    Education
-  </h2>
+
+  <h3 class="important">FORMATION</h3>
   <ul>
-    <li><span class="emph1">2025 - 2029 :</span> <a href="https://www.minesparis.psl.eu" target="_">Mines Paris – PSL</a></li>
+    <li><span class="important">2025 - 2029 :</span> Mines Paris - PSL – Cycle Ingénieur Civil</li>
+    <li><span class="important">2022 - 2025 :</span> Lycée Louis-le-Grand (Paris) – Classe préparatoire MPSI/MP</li>
   </ul>
+
+  <h3 class="important">EXPÉRIENCES & PROJETS</h3>
+  <ul>
+    <li>
+      <span class="important">2025 : Solvay & Mines Paris</span> – Projet d'ingénierie
+      <br>Étude prospective d'une exploitation de sel gemme par dissolution.
+    </li>
+    <li>
+      <span class="important">2021 : Ifremer (LOPS)</span> – Stage d'observation
+    </li>
+    <li>
+      <span class="important">2020 : Secours populaire français</span> – Bénévolat
+    </li>
+  </ul>
+
+  <h3 class="important">COMPÉTENCES & LANGUES</h3>
+  <ul>
+    <li><span class="important">Programmation :</span> Python, C, SQL</li>
+    <li><span class="important">Anglais :</span> Courant (C1)</li>
+    <li><span class="important">Allemand :</span> Intermédiaire (B1)</li>
+  </ul>
+
+  <h3 class="important">CENTRES D'INTÉRÊT</h3>
+  <ul>
+    <li>Athlétisme</li>
+  </ul>
+
+</body>
 </html>
