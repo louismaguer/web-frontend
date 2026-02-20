@@ -22,3 +22,13 @@ function initialCleanup() {
     node.remove();
   }
 }
+
+const add_btn = document.getElementById("btn-add-line")
+const grid = document.getElementById("grid")
+
+add_btn.addEventListener("click", () => {
+  for (let i=0; i<10; i++){
+    let newDiv = document.createElement("div");
+    grid.appendChild(newDiv);
+  }
+})
