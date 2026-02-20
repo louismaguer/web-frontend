@@ -47,3 +47,10 @@ function getRandomColor() {
     elmt.style.backgroundColor = getRandomColor();
   }
 })
+
+grid.addEventListener("mouseover", (evt) => {
+  let elmt = evt.target;
+  if(elmt !== grid){
+    elmt.classList.add("blue");
+  }
+})
