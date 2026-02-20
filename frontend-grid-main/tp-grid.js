@@ -34,8 +34,16 @@ add_btn.addEventListener("click", () => {
 })
 
 grid.addEventListener("click", (evt) => {
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
   let elmt = evt.target;
   if(elmt !== grid){
-    elmt.style.backgroundColor = "lightgreen";
+    elmt.style.backgroundColor = getRandomColor();
   }
 })
