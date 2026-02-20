@@ -28,7 +28,14 @@ const grid = document.getElementById("grid")
 
 add_btn.addEventListener("click", () => {
   for (let i=0; i<10; i++){
-    let newDiv = document.createElement("div");
+    const newDiv = document.createElement("div");
     grid.appendChild(newDiv);
+  }
+})
+
+grid.addEventListener("click", (evt) => {
+  let elmt = evt.target;
+  if(elmt !== grid){
+    elmt.style.backgroundColor = "lightgreen";
   }
 })
